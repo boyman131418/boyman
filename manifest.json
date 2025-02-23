@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "MP3文字提取器",
+  "version": "1.0",
+  "description": "上傳MP3檔案並提取文字",
+  "action": {
+    "default_title": "MP3文字提取器"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

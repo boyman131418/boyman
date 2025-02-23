@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #007AFF;
+    --background-color: #1A1A1A;
+    --text-color: #FFFFFF;
+    --accent-color: #FFD700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.upload-container {
+    margin: 2rem 0;
+}
+
+.upload-area {
+    border: 2px dashed var(--primary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 122, 255, 0.1);
+}
+
+.upload-area:hover {
+    border-color: var(--accent-color);
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.upload-icon {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.status.success {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: #2ecc71;
+}
+
+.status.error {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+.result-container {
+    margin-top: 2rem;
+    display: none;
+    background-color: rgba(0, 122, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.result-content {
+    text-align: left;
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: monospace;
+    line-height: 1.5;
+    border: 1px solid var(--primary-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.info-box {
+    background-color: rgba(0, 122, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary-color);
+}
+
+.info-box p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.highlight-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
